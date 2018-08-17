@@ -1,10 +1,12 @@
 {
+	"private": true,
 	"scripts": {
 		"dev": "npm run development",
-		"development": "/node_modules/webpack/bin/webpack.js --progress --hide-modules --config=/node_modules/laravel-mix/setup/webpack.config.js",
+		"development": "webpack --config=node_modules/laravel-mix/setup/webpack.config.js",
 		"watch": "npm run development --watch"
 	},
 	"devDependencies": {
+		"cross-env": "^5.1",
 		"jquery": "^3.2",
 		"laravel-mix": "^2.0"
 	}
