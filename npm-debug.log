@@ -1,106 +1,45 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
-1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
-1 verbose cli   'install',
-1 verbose cli   'laravelmix',
-1 verbose cli   '--save-dev' ]
-2 info using npm@3.10.10
-3 info using node@v6.10.1
-4 silly loadCurrentTree Starting
-5 silly install loadCurrentTree
-6 silly install readLocalPackageData
-7 silly fetchPackageMetaData laravelmix
-8 silly fetchNamedPackageData laravelmix
-9 silly mapToRegistry name laravelmix
-10 silly mapToRegistry using default registry
-11 silly mapToRegistry registry https://registry.npmjs.org/
-12 silly mapToRegistry data Result {
-12 silly mapToRegistry   raw: 'laravelmix',
-12 silly mapToRegistry   scope: null,
-12 silly mapToRegistry   escapedName: 'laravelmix',
-12 silly mapToRegistry   name: 'laravelmix',
-12 silly mapToRegistry   rawSpec: '',
-12 silly mapToRegistry   spec: 'latest',
-12 silly mapToRegistry   type: 'tag' }
-13 silly mapToRegistry uri https://registry.npmjs.org/laravelmix
-14 verbose request uri https://registry.npmjs.org/laravelmix
-15 verbose request no auth needed
-16 info attempt registry request try #1 at 5:44:00 PM
-17 verbose request id 97201ef208fcfb9e
-18 http request GET https://registry.npmjs.org/laravelmix
-19 http 404 https://registry.npmjs.org/laravelmix
-20 verbose headers { date: 'Fri, 17 Aug 2018 14:44:00 GMT',
-20 verbose headers   'content-type': 'application/json',
-20 verbose headers   'content-length': '21',
-20 verbose headers   connection: 'keep-alive',
-20 verbose headers   'set-cookie': [ '__cfduid=dd49644fb06abba39fe652b4c5a169c0f1534517039; expires=Sat, 17-Aug-19 14:43:59 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
-20 verbose headers   'cf-cache-status': 'MISS',
-20 verbose headers   'cache-control': 'max-age=300',
-20 verbose headers   'cf-ray': '44bcea899d91404a-SOF',
-20 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
-20 verbose headers   vary: 'accept-encoding, accept',
-20 verbose headers   server: 'cloudflare' }
-21 silly get cb [ 404,
-21 silly get   { date: 'Fri, 17 Aug 2018 14:44:00 GMT',
-21 silly get     'content-type': 'application/json',
-21 silly get     'content-length': '21',
-21 silly get     connection: 'keep-alive',
-21 silly get     'set-cookie': [ '__cfduid=dd49644fb06abba39fe652b4c5a169c0f1534517039; expires=Sat, 17-Aug-19 14:43:59 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
-21 silly get     'cf-cache-status': 'MISS',
-21 silly get     'cache-control': 'max-age=300',
-21 silly get     'cf-ray': '44bcea899d91404a-SOF',
-21 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
-21 silly get     vary: 'accept-encoding, accept',
-21 silly get     server: 'cloudflare' } ]
-22 silly fetchPackageMetaData Error: Not found : laravelmix
-22 silly fetchPackageMetaData     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:302:12)
-22 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:290:14)
-22 silly fetchPackageMetaData     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:210:14)
-22 silly fetchPackageMetaData     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:187:22)
-22 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
-22 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
-22 silly fetchPackageMetaData     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1048:10)
-22 silly fetchPackageMetaData     at emitOne (events.js:96:13)
-22 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
-22 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:969:12)
-22 silly fetchPackageMetaData  error for laravelmix { Error: Not found : laravelmix
-22 silly fetchPackageMetaData     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:302:12)
-22 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:290:14)
-22 silly fetchPackageMetaData     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:210:14)
-22 silly fetchPackageMetaData     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:187:22)
-22 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
-22 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
-22 silly fetchPackageMetaData     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1048:10)
-22 silly fetchPackageMetaData     at emitOne (events.js:96:13)
-22 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
-22 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:969:12) pkgid: 'laravelmix', statusCode: 404, code: 'E404' }
-23 silly rollbackFailedOptional Starting
-24 silly rollbackFailedOptional Finishing
-25 silly runTopLevelLifecycles Finishing
-26 silly install printInstalled
-27 verbose stack Error: Not found : laravelmix
-27 verbose stack     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:302:12)
-27 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:290:14)
-27 verbose stack     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:210:14)
-27 verbose stack     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:187:22)
-27 verbose stack     at emitTwo (events.js:106:13)
-27 verbose stack     at Request.emit (events.js:191:7)
-27 verbose stack     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1048:10)
-27 verbose stack     at emitOne (events.js:96:13)
-27 verbose stack     at Request.emit (events.js:188:7)
-27 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:969:12)
-28 verbose statusCode 404
-29 verbose pkgid laravelmix
-30 verbose cwd D:\Programs\xmpp\htdocs\falcon
-31 error Windows_NT 10.0.17134
-32 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "laravelmix" "--save-dev"
-33 error node v6.10.1
-34 error npm  v3.10.10
-35 error code E404
-36 error 404 Not found : laravelmix
-37 error 404
-38 error 404 'laravelmix' is not in the npm registry.
-39 error 404 You should bug the author to publish it (or use the name yourself!)
-40 error 404 Note that you can also install from a
-41 error 404 tarball, folder, http url, or git url.
-42 verbose exit [ 1, true ]
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'run', 'dev' ]
+2 info using npm@3.5.2
+3 info using node@v4.2.6
+4 verbose run-script [ 'predev', 'dev', 'postdev' ]
+5 info lifecycle @~predev: @
+6 silly lifecycle @~predev: no script for predev, continuing
+7 info lifecycle @~dev: @
+8 verbose lifecycle @~dev: unsafe-perm in lifecycle true
+9 verbose lifecycle @~dev: PATH: /usr/share/npm/bin/node-gyp-bin:/home/yavor/Documents/Falcon/node_modules/.bin:/home/yavor/bin:/home/yavor/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+10 verbose lifecycle @~dev: CWD: /home/yavor/Documents/Falcon
+11 silly lifecycle @~dev: Args: [ '-c', 'npm run development' ]
+12 silly lifecycle @~dev: Returned: code: 1  signal: null
+13 info lifecycle @~dev: Failed to exec dev script
+14 verbose stack Error: @ dev: `npm run development`
+14 verbose stack Exit status 1
+14 verbose stack     at EventEmitter.<anonymous> (/usr/share/npm/lib/utils/lifecycle.js:232:16)
+14 verbose stack     at emitTwo (events.js:87:13)
+14 verbose stack     at EventEmitter.emit (events.js:172:7)
+14 verbose stack     at ChildProcess.<anonymous> (/usr/share/npm/lib/utils/spawn.js:24:14)
+14 verbose stack     at emitTwo (events.js:87:13)
+14 verbose stack     at ChildProcess.emit (events.js:172:7)
+14 verbose stack     at maybeClose (internal/child_process.js:821:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+15 verbose pkgid @
+16 verbose cwd /home/yavor/Documents/Falcon
+17 error Linux 4.10.0-32-generic
+18 error argv "/usr/bin/nodejs" "/usr/bin/npm" "run" "dev"
+19 error node v4.2.6
+20 error npm  v3.5.2
+21 error code ELIFECYCLE
+22 error @ dev: `npm run development`
+22 error Exit status 1
+23 error Failed at the @ dev script 'npm run development'.
+23 error Make sure you have the latest version of node.js and npm installed.
+23 error If you do, this is most likely a problem with the  package,
+23 error not with npm itself.
+23 error Tell the author that this fails on your system:
+23 error     npm run development
+23 error You can get information on how to open an issue for this project with:
+23 error     npm bugs
+23 error Or if that isn't available, you can get their info via:
+23 error     npm owner ls
+23 error There is likely additional logging output above.
+24 verbose exit [ 1, true ]

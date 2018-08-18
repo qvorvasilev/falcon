@@ -11,8 +11,8 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/scripts.js', 'public/js')
-    .sass('resources/scss/master.scss', 'public/css')
+mix.js('./resources/js/scripts.js', './public/js')
+    .sass('./resources/scss/master.scss', './public/css')
     .sourceMaps()
     .webpackConfig({ devtool: "inline-source-map" }); //Fix for sourcemaps
 
