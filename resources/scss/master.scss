@@ -5,13 +5,22 @@
 
 @import 'mixins';
 
+$text-color: #7F8687;
+
+
+
 body {
 	font-family: 'Open Sans', sans-serif;
-	color: #7F8687;
+	color: $text-color;
 }
 * {
 	box-sizing: border-box;	
 }
+input,
+button {
+	outline: 0;
+}
+
 
 .container {
 	display: block;
@@ -38,6 +47,51 @@ body {
 	margin-bottom: 20px;
 	font-size: 18px;
 	line-height: 2em;
+}
+
+
+.search-form {
+	margin-bottom: 40px;
+}
+
+.field-wrapper {
+	position: relative;
+
+	input {
+		width: 100%;
+		padding: 15px 40px;
+		border: 2px solid #ccc;
+		border-radius: 5px;
+		font-size: 14px;
+		color: $text-color;
+	}
+	label,
+	.clear-btn {
+		display: inline-block;
+		position: absolute;
+		top: 1px;
+		bottom: 1px;
+		width: 40px;
+		text-align: center;
+		vertical-align: middle;
+		font-size: 14px;
+		line-height: 46px;
+		color: #aaa;
+	}
+	label {
+		left: 1px;
+	}
+	.clear-btn {
+		display: none;
+		right: 1px;
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+
+		&:hover {
+			color: darken(#aaa, 10%);
+		}
+	}
 }
 
 
@@ -75,9 +129,9 @@ body {
 			right: 20px;
 			bottom: 20px;
 
-			padding: 5px;
+			padding: 5px 10px;
 			border-radius: 15px;
-			background-color: lightgreen;
+			background-color: #73CB55;
 			font-size: 13px;
 			line-height: 1;
 			color: #fff;
@@ -117,6 +171,23 @@ body {
 			background-size: cover;
 			background-repeat: no-repeat;
 		}
+
+		&.short {
+			height: auto;
+
+			.item-icon {
+				float: left;
+				margin-right: 10px;
+				border-radius: 7px;
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: 65%;
+			}
+			.item-title {
+				margin-top: 0;
+				margin-bottom: 15px;
+			}
+		}
 	}
 	.item-box {
 		
@@ -124,6 +195,7 @@ body {
 	.item-icon {
 		display: inline-block;
 		width: 26px;
+		height: 26px;
 		border-radius: 100%;
 		
 		font-size: 15px;
@@ -148,12 +220,18 @@ body {
 		&.fa-code {
 			background-color: #D6D8DB;
 		}
+		&.sketch {
+			background-color: #FCA900;
+		}
+		&.github {
+			background-color: #000000;
+		}
 	}
 	.item-title {
 		margin-top: 10px;
 		margin-bottom: 10px;
 		font-weight: 400;
-		font-size: 18px;
+		font-size: 22px;
 
 		&.bold {
 			font-weight: bold;
@@ -169,6 +247,7 @@ body {
 		opacity: 0;
 
 		font-size: 12px;
+		line-height: 1.8em;
 
 		transition: opacity .4s ease-in-out,
 					max-height .3s ease-in-out,
@@ -185,6 +264,10 @@ body {
 
 		.item-icon {
 			opacity: 0;
+		}
+
+		&.short .item-icon {
+			opacity: 1;
 		}
 
 		.item-descr {

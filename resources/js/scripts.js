@@ -7,11 +7,19 @@ jQuery(document).ready(function($) {
 	$('#search').on('keyup', function(event) {
 		console.log(1);
 		if ($(this).val()) {
-			$(this).siblings('button').show('fast');
+			$(this).siblings('button').fadeIn('fast');
 		} else {
-			$(this).siblings('button').hide('fast');
+			$(this).siblings('button').fadeOut('fast');
 		}
 	});
+
+	/* Clears search field value on click */
+	$('.clear-btn').on('click', function(event) {
+		event.preventDefault();
+
+		$('#search').val('');
+		$(this).css('display', 'none');
+	});	
 
 
 	$('.disabled').click(function(event) {
