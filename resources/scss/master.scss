@@ -7,7 +7,7 @@
 
 body {
 	font-family: 'Open Sans', sans-serif;
-	color: #787878;
+	color: #7F8687;
 }
 * {
 	box-sizing: border-box;	
@@ -22,7 +22,34 @@ body {
 	max-width: 750px;
 }
 
+.page-title {
+	margin-bottom: 20px;
+	font-size: 42px;
+	color: #3F515B;
+	font-weight: bold;
+
+	span {
+		font-size: 14px;
+		color: #aaa;
+	}
+}
+.page-descr {
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-size: 18px;
+	line-height: 2em;
+}
+
+
 .section {
+	.section-title {
+		margin-top: 0;
+		margin-bottom: 15px;
+		padding-left: 10px;
+		padding-right: 10px;
+		color: #9EA9B2;
+		font-size: 14px;
+	}
 	.section-list {
 		@include ul;
 		@include clear;
@@ -110,16 +137,16 @@ body {
 
 
 		&.fa-thumb-tack {
-			background-color: brown;
+			background-color: #E1A532;
 		}
 		&.fa-heart {
-			background-color: purple;
+			background-color: #EB56CB;
 		}
 		&.fa-bullhorn {
-			background-color: green;
+			background-color: #36C081;
 		}
 		&.fa-code {
-			background-color: lightgray;
+			background-color: #D6D8DB;
 		}
 	}
 	.item-title {

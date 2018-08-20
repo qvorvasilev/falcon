@@ -3,7 +3,7 @@
 	"scripts": {
 		"dev": "npm run development",
 		"development": "webpack --config=node_modules/laravel-mix/setup/webpack.config.js ",
-		"watch": "webpack --config=node_modules/laravel-mix/setup/webpack.config.js --watch"
+		"watch": "webpack --watch --config=node_modules/laravel-mix/setup/webpack.config.js"
 	},
 	"devDependencies": {
 		"cross-env": "^5.1",
