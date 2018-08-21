@@ -8,6 +8,10 @@
 $text-color: #7F8687;
 
 
+html,
+body {
+	height: 100%;
+}
 
 body {
 	font-family: 'Open Sans', sans-serif;
@@ -190,6 +194,7 @@ button {
 		}
 	}
 	.item-box {
+		position: relative;
 		
 	}
 	.item-icon {
@@ -280,6 +285,52 @@ button {
 						max-height .3s ease-in-out,
 						padding-bottom .3s ease-in-out;
 		}		
+	}
+
+}
+
+
+
+
+
+
+
+
+
+// parallax
+
+.parallax-img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+	&.sky {
+
+	}
+	&.sun {
+		background-image: url(https://www.iconsdb.com/icons/preview/orange/circle-xxl.png);
+		background-size: 50px 50px;
+		background-position: 380px 370px;
+	}
+	&.surface {
+		background-image: url(https://maxwelldemon.files.wordpress.com/2012/03/2x1-rectangle.png);
+		background-size: 100% 100px;
+		background-position: center 410px;
+	}
+	&.pyramid-left {
+		background-image: url(http://www.pngall.com/wp-content/uploads/2016/06/Pyramid.png);
+		background-size: 120px 90px;
+		background-position: 285px 342px;
+	}
+	&.pyramid-right {
+		background-image: url(http://www.pngall.com/wp-content/uploads/2016/06/Pyramid.png);
+		background-size: 180px 160px;
+		background-position: 400px 289px;
 	}
 
 }
