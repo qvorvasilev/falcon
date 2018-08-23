@@ -1,0 +1,18 @@
+{
+	"private": true,
+	"scripts": {
+		"dev": "npm run development",
+		"development": "webpack --config=node_modules/laravel-mix/setup/webpack.config.js ",
+		"watch": "webpack --watch --config=node_modules/laravel-mix/setup/webpack.config.js"
+	},
+	"devDependencies": {
+		"cross-env": "^5.1",
+		"fontawesome": "^4.7.2",
+		"jquery": "^3.2",
+		"laravel-mix": "^2.0",
+		"node-sass": "^4.9.3"
+	},
+	"dependencies": {
+		"font-awesome": "^4.7.0"
+	}
+}

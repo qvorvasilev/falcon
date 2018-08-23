@@ -1,0 +1,190 @@
+.section {
+	.section-title {
+		margin-top: 0;
+		margin-bottom: 15px;
+		padding-left: 10px;
+		padding-right: 10px;
+		color: #9EA9B2;
+		font-size: 14px;
+	}
+	.section-list {
+		@include ul;
+		@include clear;
+
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+	.section-item {
+		position: relative;
+		float: left;
+		padding-left: 15px;
+		padding-right: 15px;
+		width: 33.333334%;
+
+
+		&.double {
+			width: 66.666667%;
+			color: #fff;
+		}
+
+		.item-notification {
+			position: absolute;
+			right: 20px;
+			bottom: 20px;
+
+			padding: 5px 10px;
+			border-radius: 15px;
+			background-color: #73CB55;
+			font-size: 13px;
+			line-height: 1;
+			color: #fff;
+		}
+	}
+
+	.item-wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+
+		margin-bottom: 30px;
+		padding: 15px 15px 0;
+		height: 170px;
+		border-radius: 15px;
+
+		-webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2);
+		-moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2);
+		box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2);
+
+		transform: translateY(0);
+
+		color: inherit;
+		text-decoration: none;
+
+		overflow: hidden;
+		transition: box-shadow .3s ease-in-out,
+					transform .3s ease-in-out;
+
+		&.disabled {
+			cursor: not-allowed;		
+		}
+
+		&.parallax {
+			// background-image: url(https://paintings.pinotspalette.com/paradise-sunset-tv.jpg?v=10014337);
+			background-attachment: fixed;
+		    background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+
+		&.short {
+			height: auto;
+
+			.item-icon {
+				float: left;
+				margin-right: 10px;
+				border-radius: 7px;
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: 65%;
+			}
+			.item-title {
+				margin-top: 0;
+				margin-bottom: 15px;
+			}
+		}
+	}
+	.item-box {
+		position: relative;
+		
+	}
+	.item-icon {
+		display: inline-block;
+		width: 26px;
+		height: 26px;
+		border-radius: 100%;
+		
+		font-size: 15px;
+		line-height: 26px;
+		text-align: center;
+		vertical-align: middle;
+		color: #fff;
+		
+		opacity: 1;
+		transition: opacity .25s ease-in-out;
+
+
+		&.fa-thumb-tack {
+			background-color: #E1A532;
+		}
+		&.fa-heart {
+			background-color: #EB56CB;
+		}
+		&.fa-bullhorn {
+			background-color: #36C081;
+		}
+		&.fa-code {
+			background-color: #D6D8DB;
+		}
+		&.sketch {
+			background-color: #FCA900;
+		}
+		&.github {
+			background-color: #000000;
+		}
+	}
+	.item-title {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		font-weight: 400;
+		font-size: 22px;
+
+		&.bold {
+			font-weight: bold;
+		}
+	}
+	.item-descr {
+		margin-top: 0;
+		margin-bottom: 0;
+		padding-bottom: 0;
+
+		max-height: 0;
+		overflow: hidden;
+		opacity: 0;
+
+		font-size: 12px;
+		line-height: 1.8em;
+
+		transition: opacity .4s ease-in-out,
+					max-height .3s ease-in-out,
+					padding-bottom .3s ease-in-out;
+	}
+
+	/* Hover Effects */
+	.item-wrapper:hover {
+		-webkit-box-shadow: 0px 15px 35px 0px rgba(0,0,0,0.2);
+		-moz-box-shadow: 0px 15px 35px 0px rgba(0,0,0,0.2);
+		box-shadow: 0px 15px 35px 0px rgba(0,0,0,0.2);
+		
+		transform: translateY(-3px);
+
+		.item-icon {
+			opacity: 0;
+		}
+
+		&.short .item-icon {
+			opacity: 1;
+		}
+
+		.item-descr {
+			padding-bottom: 15px;
+
+			max-height: 100%;
+			opacity: 1;
+
+			transition: opacity .15s ease-in-out,
+						max-height .3s ease-in-out,
+						padding-bottom .3s ease-in-out;
+		}		
+	}
+
+}

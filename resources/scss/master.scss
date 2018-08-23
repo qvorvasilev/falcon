@@ -1,0 +1,13 @@
+// @import '../../node_modules/font-awesome/scss/font-awesome';
+// @import '../../node_modules/font-awesome/src/font-awesome.css';
+// @import '../../node_modules/font-awesome/src/font-awesome.css';
+// $fa-font-path: '../font';
+
+// Utility
+@import 'mixins';
+@import 'variables';
+
+// element styles includes
+@import 'components/base-theme-common';
+@import 'components/boxes';
+@import 'components/parallax';
