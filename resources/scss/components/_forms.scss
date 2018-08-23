@@ -1,0 +1,46 @@
+
+
+
+.search-form {
+	margin-bottom: 40px;
+}
+
+.field-wrapper {
+	position: relative;
+
+	input {
+		width: 100%;
+		padding: 15px 40px;
+		border: 2px solid #ccc;
+		border-radius: 5px;
+		font-size: 14px;
+		color: $text-color;
+	}
+	label,
+	.clear-btn {
+		display: inline-block;
+		position: absolute;
+		top: 1px;
+		bottom: 1px;
+		width: 40px;
+		text-align: center;
+		vertical-align: middle;
+		font-size: 14px;
+		line-height: 46px;
+		color: #aaa;
+	}
+	label {
+		left: 1px;
+	}
+	.clear-btn {
+		display: none;
+		right: 1px;
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+
+		&:hover {
+			color: darken(#aaa, 10%);
+		}
+	}
+}
