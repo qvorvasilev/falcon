@@ -5,7 +5,6 @@ jQuery(document).ready(function($) {
 	
 	/* Shows clear search button */
 	$('#search').on('keyup', function(event) {
-		console.log(1);
 		if ($(this).val()) {
 			$(this).siblings('button').fadeIn('fast');
 		} else {
@@ -23,7 +22,6 @@ jQuery(document).ready(function($) {
 
 
 	$('.disabled').click(function(event) {
-		console.log(1);
 		return false;
 	});
 
@@ -56,7 +54,6 @@ jQuery(document).ready(function($) {
 	  	var pyramidPosRight = Math.round(-20 - scrollPercent*0.2) + 'px';
 	  	var surfacePos = Math.round(0 - scrollPercent*0.2) + 'px';
 	  	var skyPos = Math.round(0 - scrollPercent*5.1) + 'px';
-	  	console.log(scrollPercent);
 
 	  	var sunShadow = sunBoxShadow(0, 0, 20, 5, scrollPercent);
 	  	// var pyramidShadow = pyramidBoxShadow(2, 2, 10, 2, scrollPercent);
