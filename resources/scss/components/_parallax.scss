@@ -20,12 +20,13 @@
 
 	}
 	&.sun {
-		width: 50px;
-		height: 50px;
+		width: 60px;
+		height: 60px;
 		background-color: #fc00d2;
 		border-radius: 50px;
 		
-		left: 260px;
+		// left: 260px;
+		right: 155px;
 		bottom: 50px;
 	}
 	&.surface {
@@ -43,7 +44,8 @@
 		height: 100px;
 		transform: scale(1) rotate(45deg);
 
-		left: 160px;
+		// left: 160px;
+		right: 210px;
 		bottom: 15px;
 	}
 	&.pyramid-right {
@@ -52,7 +54,8 @@
 		transform: scale(1) rotate(45deg);
 		
 		bottom: -20px;
-		left: 315px;
+		// left: 315px;
+		right: -16px;
 	}
 
 	&.pyramid-left,
