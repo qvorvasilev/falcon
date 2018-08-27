@@ -49,7 +49,7 @@ jQuery(document).ready(function($) {
 	  	}
 	  
 
-	  	var sunPos = Math.round(50 + scrollPercent*0.65) + 'px'; //because sun needs to travel exactly 65px distance
+	  	var sunPos = Math.round(50 + scrollPercent*0.55) + 'px'; //because sun needs to travel exactly 55px distance
 	  	var pyramidPosLeft = Math.round(15 - scrollPercent*0.2) + 'px';
 	  	var pyramidPosRight = Math.round(-20 - scrollPercent*0.2) + 'px';
 	  	var surfacePos = Math.round(0 - scrollPercent*0.2) + 'px';
